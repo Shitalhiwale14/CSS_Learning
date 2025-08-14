@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* media Query */
+
+        /* Mobile first,we start from the smallest viewport width */
+
+        @media (min-width:320px) and (max-width:767px){
+            body{
+                font-size:20px;
+                background:greenyellow;
+            }
+            p{
+                display:none;
+            }
+            h1,h3{
+                color:white;
+            }
+            .img1{
+                display:none;
+            }
+        }
+
+        /* from 1024px and up */
+        @media (min-width:1024px) {
+            body{
+                background-color: yellow;
+            }
+        }
+
+                /* from 1224px and up */
+        @media (min-width:1224px) {
+            body{
+                background-color: purple;
+            }
+        }
+
+                /* from 1824px and up */
+        @media (min-width:1824px) {
+            body{
+                background-color:Aqua;
+            }
+        }
+
+       /* max-width query */
+       /* from 850px and up until 950px */
+       @media(min-width:850px) and (max-width:950px){
+        body{
+            background-color: purple;
+        }
+        h1,h3{
+            color:aqua;
+            font-size: 100px;
+
+        }
+        .img1{
+            display:none;
+        }
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>The Background Will change according to the viewport width change</p> <br> <br>
+    <img class="Images" src="Images/landscape-7373484_640.jpg" alt="Landscape">
+
+    <h3>Smartphone - <span class="Detail">from 320px and up </span>(min-width:320px)
+    </h3>
+    <p>greenyellow</p>
+    <br>
+
+    <h3>Tablet,Ipad(portrait)-<span class="detail">from 768px and up</span>
+    (min-width:768px)</h3>
+    <p>blue</p>
+    <br>
+
+     <h3>Desktop and laptop - <span class="detail">from 1224px and up</span>
+    (min-width:1224px)</h3>
+    <p>Yellow</p>
+    <br>
+    
+     <h3>large screen -<span class="detail">from 1824px and up</span>
+    (min-width:1824px)</h3>
+    <p>orange (zoom out if needed [ctrl & - ]) </p>
+    <br>
+
+    <h3>custom media query - <span class="detail">from 850px and up,until 950px</span>
+    (min-width:850px) and (max-width:950)</h3>
+    <p>purple (zoom out if needed [ctrl & - ])</p>
+    <br>
+</body>
+</html>
